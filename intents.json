@@ -1,0 +1,552 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "How are you",
+          "Is anyone there?",
+          "Hello",
+          "Good day",
+          "Sup",
+          "Hola",
+          "good morning",
+          "good afternoon",
+          "good evening"
+        ],
+        "responses": [
+          "Hey :-)",
+          "Hello, thanks for visiting",
+          "Hi there, what can I do for you?",
+          "Hi there, how can I help?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye","tata","sayonara"],
+        "responses": [
+          "See you later, thanks for visiting",
+          "Have a nice day",
+          "Bye! Come back again soon."
+        ]
+      },      
+      {
+        "tag": "funny",
+        "patterns": [
+          "Tell me a joke!",
+          "Tell me something funny!",
+          "Do you know a joke?"
+        ],
+        "responses": [
+          "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+          "What did the buffalo say when his son left for college? Bison."
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!","its working thanks"],
+        "responses": ["Glad to help!", "Any time!", "My pleasure :)"]
+      },
+      {
+        "tag":"filler",
+        "patterns":[
+          "My laptop has a problem",
+          "this pc has a problem",
+          "there is a bug i need to fix",
+          "there is an issue with my computer"
+        ],
+        "responses":["Yes, please explain."]
+      },
+      {
+        "tag": "agree",
+        "patterns": ["It works","fine","ok","sure","ill try","Solves the problem","the problem is fixed","nice","done","should do the job","yes this works"],
+        "responses": ["So anything else?"]
+      },
+      {
+        "tag":"disagree",
+        "patterns":[
+          "its not working",
+          "doesnt work",
+          "is there another way or method",
+          "any other way",
+          "i cant or cannot fix it",
+          "give me another solution",
+          "I dont think it works",
+          "no change",
+          "the issue isnt getting solved",
+          "Nothing seems to be working",
+          "any other way",
+          "still the same", 
+          "The problem is not being resolved.", 
+          "No change, I don't believe it works.",
+          "provide me with another solution.",
+          "The issue has not been addressed.",
+          "Please come up with a different solution for me.",
+          "The problem isn't being dealt with."
+        ],
+        "responses":["Please rephrase your query to give a better chance to give a correct match."]
+      },
+      {
+        "tag":"appointment",
+        "patterns":[
+          "Can I book an appointment?",
+          "I want to book an appointment?",
+          "I am looking for a person to service my laptop",
+          "I need to talk to the service person",
+          "I dont know how to do it",
+          "I dont know what to do",
+          "I dont want to talk to you",
+          "I had enough of this",
+          "No none of these work i want to go fix it in person",
+          "Can i get it fixed in person",
+          "I am done chatting with you but still need a solution",
+          "Any way of talking to a human directly",
+          "Is it possible for me to schedule an appointment?",
+          "I'd like to schedule an appointment.",
+          "I'm looking for someone to service my laptop, and I need to talk to the service person. I'm not sure how to do it, or what to do, and I don't want to talk to you.",
+          "No, none of these work for me, I'd rather go fix it myself.",
+          "Can I get it corrected in person? I've finished talking to you, but I'm still looking for a solution.",
+          "Any technique to communicate directly with a human",
+          "Is it feasible for me to make a reservation?",
+          "I'm seeking for someone to repair my laptop, and I'd like to speak with the technician. I'm not sure how to proceed or what to do, and I'm not interested in speaking with you.",
+          "No, none of these options appeal to me; I'd rather go ahead and fix it by someone else.",
+          "Is it possible for me to have it fixed by a human? I've wrapped up my conversation with you, but I'm still looking for a solution.",
+          "Any method of communicating with a person directly.",
+          "Any means of directly connecting with a person."
+        ],
+        "responses":[]
+      },
+      {
+        "tag":"laptop overheating",
+        "patterns":[
+          "Why is my laptop overheating so much?", 
+          "How to stop my laptop from overheating" ,
+          "What to Do if Your Laptop Is Overheating?" ,
+          "My laptop's getting overheated. What should I do about it?" ,
+          "Ways To Deal With Your Overheating Laptop" ,
+          "What is causing my laptop to overheat so much?",
+          "How can I keep my laptop from getting too hot?",
+          "How can I keep my laptop from heating up?",
+          "How can I keep my laptop from burning up?",
+          "How can I avoid my laptop from getting hot?",
+          "How can I prevent my laptop from overheating?",
+          "What Should You Do If Your Laptop Overheats?",
+          "What Should You Do If Your Computer Overheats?",
+          "What Should You Do If Your Computer Heats up?",
+          "What Should You Do If Your Computer Gets very hot?",
+          "What Should You Do If Your Computer Gets too hot?",
+          "My laptop is getting too hot. What should I do in this situation?",
+          "My laptop is heating up. What can I do in this situation?",
+          "My laptop is overheating. What can I do in this scenario?"
+        ],
+        "responses":[
+          "Change your laptop's power settings from High Performance to a Balanced or Power Saver plan. This tweak will tell the system only to use the power required to run your applications rather than always using the maximum processor speed. If you need to play games or other intensive work, you can switch back to the high-performance plan as required. This can be done by customising power plan from your settings", 
+          "Use dust remover spray to clean the laptop's vents. Dust accumulates in the laptop's fan vents—a problem quickly solved with a can of compressed air.",
+          "Use a laptop cooling pad that has fans. Laptop pads have vents that can increase the airflow around your laptop, but a fan is the best way to go for more substantial cooling needs.", 
+          "Shut down your computer when it's not in use, especially when you are not at home.", 
+          "Most manufacturers offer an installation file that updates BIOS files automatically, which often address heat management. Just make sure that your notebook is connected to the power supply when updating the BIOS." 
+        ]
+      },
+      {
+        "tag":"laptop slow",
+        "patterns":[
+          "Why is My Laptop so Slow and How Can I Fix It? ",
+          "How to Fix a Slow Computer" ,
+          "Slow laptop? How to make it faster",
+          "How to Troubleshoot Your Slow Laptop",
+          "My computer lags too much.",
+          "What is the cause of my laptop's slowness, and how can I fix it?",
+          "What is the reason for my laptop's lag, and how can I solve it?",
+          "How to Improve the Performance of a Slow Computer",
+          "How to Improve the Efficiency of a Slow Computer",
+          "My laptop is slow. What can you do to make it go faster?",
+          "My pc seems slow. How can you do to make it work faster?",
+          "How to Fix My Sluggish Laptop",
+          "How to Fix My Painfully slow Laptop",
+          "How to Improve My Painfully slow Laptop",
+          "How to Improve My Stagnant Pc",
+          "My PC is quite sluggish.",
+          "My Laptop is quite laggy.",
+          "My Laptop is very clunky."
+
+        ],
+        "responses":[
+          "Scan Your laptop for any types of malware, virus attacks.", 
+          "Close Unused Apps and Tabs or unused tabs in browsers", 
+          "Limit how many apps start automatically when you boot up your computer. Too many means slow startups and lacklustre performance.",
+          "Free up some disk space or try upgrading your components.", 
+          "Check if all drivers are upto date. If not update all drivers." 
+        ]
+      },
+      {
+        "tag":"laptop screen fault",
+        "patterns":[
+          "How to troubleshoot a faulty laptop screen", 
+          "How do I fix my laptop screen without replacing it?", 
+          "My laptop screen is damaged. What should I do?" ,
+          "How to Repair a Faulty Laptop Display",
+          "How to Fix a Defective Laptop Display",
+          "How to Restore a Leaky Laptop Display",
+          "How do I fix a Leaky Laptop Display",
+          "How do I fix a Flawed Laptop Display",
+          "How can I repair my laptop screen without having to replace it?",
+          "How can I fix my computer monitor without replacing it?",
+          "How can I restore my computer monitor without replacing it?",
+          "How do I repair my screen without having to replace it?",
+          "My laptop's screen has been shattered. So, what should I do now?"
+        ],
+        "responses":[
+          "Update your graphics driver. An outdated graphics driver could prevent the screen from displaying correctly.", 
+          "You may also try updating the BIOS, as it could also be the source of the problem.", 
+          "Perform a hard reset. Performing a hard reset is not the same as factory resetting your HP laptop. The hard reset should not clear any of your data from your computer, but it could clear out any driver or firmware errors that might be happening.", 
+          "Reset the RAM. If you find you have a bad memory card, you can pick up and install a new stick of RAM to get your display going again.",
+          "Remove the main battery in the laptop or tablet and try using AC power only. Yes, it's perfectly fine to run your portable computer without the battery installed. Also Carefully inspect the power receptacle on the laptop or tablet for damage. Check for broken/bent pins and bits of debris that might be preventing the computer from getting power and charging the battery." 
+        ]
+      },
+      {
+        "tag":"laptop touchpad",
+        "patterns":[
+          "My touchpad is not working", 
+          "How do I fix my unresponsive touchpad?", 
+          "How do I get my touchpad working again? ",
+          "How do I unfreeze my touchpad? ",
+          "Why is my laptop mouse touchpad not working?" ,
+          "My touchpad isn't working",
+          "My touchpad isn't working properly.",
+          "My touchpad is not really working correctly.",
+          "My touchpad isn't running normally.",
+          "How do I fix my touchpad that isn't responding?",
+          "How do I fix my trackpad that isn't responding?",
+          "How do I repair my trackpad that's not responding?",
+          "How do I restore my trackpad which is not responding?",
+          "Can you tell me how to get my touchpad to work again?",
+          "Could you tell me how to get my trackpad to function again?",
+          "How do I get my touchpad to unfreeze?",
+          "My touchpad is frozen",
+          "My trackpad froze",
+          "How come the touchpad on my laptop isn't working?",
+          "How come the touchpad on my pc isn't working?",
+          "How come the touchpad on my pc is still not working?",
+          "How come the touchpad on my computer is still not working?"
+
+        ],
+        "responses":[
+          "Confirm that the trackpad is connected correctly. If you use a touchpad that connects through USB, check that both ends of the connecting cable are fully plugged in. ",
+          "Remove and reconnect the touchpad. Unplugging and reconnecting the touchpad may fix connection issues." , 
+          "Restart the device. Restarting a computer, laptop, or tablet can often fix problems, including a touchpad that isn't working properly." ,
+          "Update device drivers. Sometimes you need to update a device driver to make it more compatible with the hardware and operating system" ,
+          "Enable Touchpad in Settings. This varies by device, but in general, to check if the touchpad has been disabled in Windows and turn it back on, open Settings, select Devices > Touchpad, and make sure the switch is set to On." 
+        ]
+      },
+      {
+        "tag":"screen flicker",
+        "patterns":[
+          "Troubleshoot screen flickering in Windows" ,
+          "How to Fix Screen Flickering and Flashing" ,
+          "My eyes hurt while using laptop.",
+          "My Laptop Screen Flashes too much" ,
+          "5 Best Ways to Fix Screen Flickering on Windows 10",
+          "In Windows, troubleshoot screen flickering" ,
+          "In Windows, fix screen flickering",
+          "In Windows, fix screen flashing",
+          "In Pc, fix screen flashing",
+          "In Pc, repair screen flicker",
+          "How to Get Rid of Flickering and Flashing on Your Screen",
+          "What to Do to get Rid of Flickering and Flashing on Your Display",
+          "What to Do to get Rid of Flickering and Flashing on My Display",
+          "When I use my laptop, my eyes hurt.",
+          "When I use my computer, my eyes hurt.",
+          "When I use my computer, my head hurts.",
+          "My laptop's screen flashes excessively",
+          "My laptop's screen flashes abnormally",
+          "My computer's screen flashes abnormally"
+        ],
+        "responses":[
+          "Check to see whether the Task Manager flickers. Turn your computer on, and wait for the desktop to load." ,
+          "Set the Correct Refresh Rate. Check the refresh rate setting on your computer and verify it matches the monitor's refresh rate" ,
+          "Update your graphics driver. Check for any available updates for your graphics driver, and install them." ,
+          "Check for known problem apps and stop any app you think is causing this crash." ,
+          "Attempt a system restore. Think about when you first noticed the screen flickering, and then check to see if you have a system restore point from before that day."
+        ]
+      },
+      {
+        "tag":"speakers",
+        "patterns":[
+          "Fix sound problems" ,
+          "How to Fix Audio Not Working On Your Laptop" ,
+          "Laptop Speakers Not Working" ,
+          "What to do if my laptop's sound isn't working", 
+          "Unable to hear anything from my laptop or pc" ,
+          "Fix the sound issues",
+          "Fix my pc's sound issues",
+          "How to Fix Your Laptop's Audio Problem",
+          "How Do I Fix My Laptop's Audio Problem?",
+          "How Would I Fix My Computer's Audio Issue?",
+          "The Speakers on My Laptop Aren't Working",
+          "The Speakers of My Computer Aren't Working",
+          "The Speakers of My Computer Aren't Functioning",
+          "What should I do if the sound on my laptop stops working?",
+          "What should I do if the sound on my computer stops functioning?",
+          "What should I do if the audio on my computer stops functioning?",
+          "I can't hear anything from my laptop or computer.",
+          "I can't hear anything at all from my laptop."
+        ],
+        "responses":[
+          "Make sure your sound isn't muted. Laptops often include a mute button or shortcut you may have accidentally pushed, and you can also mute by clicking the speaker icon in the Windows system tray." ,
+          "Try a set of headphones. Plug in a set of headphones or earbuds if you have them handy, and try to borrow a set if you don't. If you hear sound from your headphones, then there is either a problem with the software or driver responsible for switching outputs, or there is a physical problem with your laptop speakers." ,
+          "Make sure the audio sensor isn't stuck. Laptops use a sensor to tell whether or not you have plugged headphones into the audio jack. If your computer thinks headphones are plugged in even when they aren't, it won't send sound to the speakers. If the problem is your audio input sensor, you will have to take your laptop in for service.", 
+          "Check your playback device. Ensure that speakers are set as playback device. If any other device is set as the playback device change it back and try again." ,
+          "Run the sound trouble-shooter. The built-in Windows sound trouble-shooter checks and fixes a lot of problems automatically. To run the sound troubleshooter, right-click the speaker icon in the system tray, click troubleshoot sound problems, then follow the on-screen prompts once the troubleshooter has appeared." 
+        ]
+      },
+      {
+        "tag":"laptop keyboard",
+        "patterns":[
+          "Why do some keys on my laptop keyboard not work? ",
+          "How do I fix unresponsive keyboard keys?" ,
+          "Laptop keyboard not working? ",
+          "How to Fix Laptop Keyboard When It Stops Working" ,
+          "How come some of the keys on my laptop keyboard aren't working?",
+          "How come some of the keys on my computer keyboard aren't operating?",
+          "Why a few of the buttons on my key board aren't operating?",
+          "Why come a few of the buttons on my key board aren't working?",
+          "How can I fix keyboard keys that aren't responding?",
+          "How do I fix keyboard that isn't responding?",
+          "The keyboard on my laptop isn't working.",
+          "The keyboard on my computer isn't working.",
+          "The keyboard on my laptop is not working.",
+          "The keyboard on my computer is not working.",
+          "The keyboard on my notebook is not working.",
+          "How to Restore the Functioning of a Laptop Keyboard"
+        ],
+        "responses":[
+          "Restart your computer. Occasionally, errors can happen in drivers, firmware, or software that will clear out when you restart your computer. Once you've restarted, check your keyboard to see if it is responding. ",
+          "Unlock your keyboard. It's easy to trigger the shortcut to lock keyboard accidentally, so even if you don't think you've locked the keyboard, press and hold the right Shift key for 8 seconds. ",
+          "Turn off Cortana. Despite being useful, Cortana can sometimes interfere with other functions on your laptop. Try disabling it to see if it gets your keyboard working again.", 
+          "Run Windows Troubleshooter. Run the troubleshooter, and work through any suggestions it returns.",
+          "Disable other input methods. The windows Collaborative Translation Framework (CtfMon.exe) is designed to allow multiple input types, including a keyboard, touch, and stylus. However, it can also interfere with your keyboard. Try disabling ctfmon.exe to see if that might make your system default back to the keyboard." 
+        ]
+      },
+      {
+        "tag":"automatic shutdown",
+        "patterns":[
+          "How to Fix a Computer That Turns On and Then Off ",
+          "Why does my computer power on and then immediately turns off", 
+          "PC turns ON and then OFF in a matter of seconds" ,
+          "How to Troubleshoot a Computer That Turns On and Off",
+          "How to Troubleshoot a Laptop Which Goes On and Off",
+          "How to Troubleshoot a Pc Which Turns On and Off",
+          "What causes my computer to switch on and then turn off?",
+          "What causes my computer to turn on and then switch off?",
+          "What causes my computer to power on and then power off?",
+          "What causes my laptop to power on and then power off?",
+          "In a matter of seconds, the computer turns on and then turns off.",
+          "In a matter of seconds, the laptop turns on and then turns off."
+        ],
+        "responses":[
+          "Troubleshoot the cause of the beep code, assuming you're lucky enough to hear one. A beep code will give you an excellent idea of exactly where to look for the cause of your computer turning off. ",
+          "Make sure you're keeping the computer cool enough, or it might overheat to the point that it shuts down.", 
+          "Test your power supply. Just because your laptop came on for a few moments doesn't mean that the power supply unit in your computer is working correctly.", 
+          "Reseat everything inside of your computer. Reseating will re-establish all of the connections." ,
+          "Start your PC with essential hardware only. The purpose here is to remove as much hardware as possible while still maintaining your computer's ability to power on." 
+        ]
+      },
+      {
+        "tag":"blue screen",
+        "patterns":[
+          "How to Fix a Windows Blue Screen of Death",
+          "How to deal with Blue Screen of Death woes in Windows" ,
+          "My pc or laptop is showing a blue screen." ,
+          "Recover from BSOD" ,
+          "How to Recover from a Blue Screen of Death in Windows",
+          "How to Return from a Blue Screen of Death in Windows",
+          "How to Handle the Blue Screen of Death in Windows",
+          "There's a blue screen on my laptop.",
+          "There's a blank screen on my laptop.",
+          "There's a blank screen on my computer.",
+          "There's a blank screen on my pc.",
+          "There's a blue screen on my notebook."
+        ],
+        "responses":[
+          "The most important Blue Screen of Death troubleshooting step you can take is to ask yourself what you did just before the device stopped working. Undo the change you made and test again for the STOP Error. Try updating BIOS again. ",
+          "Check that there's enough free hard drive space where Windows is being installed. ",
+          "Scan your computer for malware and viruses. Some viruses can cause a Blue Screen of Death, especially ones that infect the master boot record (MBR) or boot sector." ,
+          "Check for and install all available Windows service packs and updates." ,
+          "Return hardware settings to default in Device Manager and update all the necessary hardware drivers." 
+        ]
+      },
+      {
+        "tag":"battery charge",
+        "patterns":[
+          "What to do when your laptop battery won't charge ",
+          "Why the battery is not charging when it is plugged in? ",
+          "How to Fix a Laptop That Won't Charge" ,
+          "laptop Plugged In but not Charging" ,
+          "How to deal with a laptop battery that won't charge",
+          "How to deal with a computer battery which won't charge",
+          "How come the battery doesn't charge when it's plugged in?",
+          "How come the battery doesn't start charging when it's plugged in?",
+          "How to Repair a Non-Charging Laptop",
+          "How to Recharge a Laptop That Isn't Charging",
+          "How to Charge a Laptop That Isn't Charging",
+          "It's plugged in, but it's not charging",
+          "My laptop is plugged in, but it isn't charging.",
+          "My pc is plugged in, but it's not charging.",
+          "This pc is connected, but it's not charging."
+        ],
+        "responses":[
+          "Check the wattage of the charger that came with your laptop—if it came with a 45W charger, you'll probably want to stick with a 45W charger (or higher) to power it, and so on. A lower-wattage charger might keep the battery from draining while you use it, but it won't be enough to charge it any higher.", 
+          "You may even find that your system shuts down to prevent overheating a battery and causing a fire. Turn the system off, give it some time to cool down, and take a moment to make sure the air vents are free of dust and unobstructed by blankets." ,
+          "Open the Start menu and search for \"Device Manager.\" Under Batteries, you should see a few items: usually one for the charger and one listed as Microsoft ACPI Compliant Control Method Battery, though there may be others. Right-click each item and choose Update Driver." ,
+          "Try changing the adapter and check if the battery gets charged up using a different adapter. ",
+          "First, check the integrity of the battery. If your laptop comes with a removable battery, take it out, and hold the power button down for about 15 seconds to drain any residual power from the device. Then, with the battery still removed, plug in the power cable and turn the laptop on. If the laptop powers on properly, that means the power adapter is working properly and the problem is likely a bum battery. You can always re-install the battery and try again—maybe the battery was just poorly seated." 
+        ]
+      },
+      {
+        "tag":"start safe mode",
+        "patterns":[
+          "Unable to boot windows 10 or get in to safe mode",
+          "Here's what you should do if your computer won't start in safe mode.",
+          "Win10 safe mode fails to boot",
+          "Can't boot Win 10 Safe Mode",
+          "If your computer won't start in safe mode, here's what you should do.",
+          "Unable to boot Windows 10 or enter safe mode",
+          "I'm unable to enter safe mode.",
+          "What if my computer doesn't boot in safe mode?",
+          "Here's what to do if your computer doesn't boot into safe mode",
+          "I can't get into Safe Mode.",
+          "Unable to enter safe mode.",
+          "I'm unable to start Safe Mode.",
+          "Fix can't Enter Safe Mode in Windows 10",
+          "I can't enter safe mode.",
+          "How to Fix a Computer That Won't Start in Safe Mode",
+          "What to Do If Your Computer Won't Start in Safe Mode",
+          "If your computer won't start in safe mode, follow these steps.",
+          "Hotfix cannot enter safe mode on Windows 10",
+          "How to fix a computer that doesn't boot in safe mode"
+        ],
+        "responses":[
+          "Try to start Windows in every startup method available.",
+          "Repair your Windows installation. The most common reason for Windows to continuously return you to the Startup Settings or Advanced Boot Options menu is because one or more important Windows files are damaged or missing." ,
+          "Perform a System Restore from Advanced Startup Options or System Recovery Options, depending on your version of Windows, to undo recent changes." ,
+          "Use the System File Checker command to repair protected Windows files. A damaged operating system-related file could be preventing you from getting past the Startup Settings or Advanced Boot Options menu, and the sfc command could fix the problem." , 
+          "Test RAM and Hard drive which if test found some error upgrade or replace the needy." 
+        ]
+      },
+      {
+        "tag":"laptop wifi",
+        "patterns":[
+          "What to do if your laptop won't connect to Wi-Fi",
+          "Other devices can connect to WiFi, but my laptop can't recognize or connect to the network.",
+          "Fix WiFi connection issues",
+          "Is it impossible for your laptop to connect to the internet via WiFi?",
+          "Is your laptop connected to WiFi?",
+          "Other devices are able to connect to Wi-Fi, however my laptop does not recognise or join the network.",
+          "Is your laptop unable to connect to the internet via WiFi?",
+          "What to do if your laptop doesn't connect to WiFi",
+          "Laptop not connecting to wifi?",
+          "How to fix a laptop that doesn't connect to WiFi",
+          "Other devices are able to connect to wifi but my laptop is not able to detect or connect to Wi-Fi",
+          "Other devices can connect to WiFi, but my laptop can't detect or connect to WiFi",
+          "What should you do if your laptop won't connect to the internet via Wi-Fi?",
+          "Troubleshoot your Wi-Fi connection",
+          "How to fix a laptop that won't connect to Wi-Fi",
+          "Fix Wi-Fi connection issues",
+          "Other devices can connect to Wi-Fi, however my laptop is unable to recognise or join to the network.",
+          "Check your Wi-Fi connection for issues."
+        ],
+        "responses":[
+          "Reboot your Laptop and try connecting to a different wifi channel. ",
+          "Reset your Wi-Fi driver. Doing this will clear the network cache and hopefully remove any connection errors." ,
+          "Update your Wi-Fi driver. Network connection issues often result from outdated Wi-Fi drivers, and an update can resolve this. ",
+          "Release and renew your IP address. You'll do this using the IPCONFIG command, which will drop any IP address your router has registered for your device and create a new one. It could clear any issues your router may have in allowing the connection from your old IP address. ",
+          "Run the network troubleshooter and also disable any antivirus or firewall software." 
+        ]
+      },
+      {
+        "tag":"file open",
+        "patterns":[
+          "How to Fix Corrupted Files" ,
+          "How to fix The file is corrupt and cannot be opened",
+          "My File is visible but I am not able to open it",
+          "How to Recover Files That Have Been Corrupted",
+          "Although my file is viewable, I am unable to open it.",
+          "How to Get Files Back After They've Been Corrupted",
+          "How to Make Repairs It is not possible to open the file since it has become corrupted.",
+          "How to Repair The file has become corrupted and is unable to be opened.",
+          "Despite the fact that my file may be viewed, I am unable to open it.",
+          "How to repair corrupted files" ,
+          "The troubleshooting file is corrupted and cannot be opened ",
+          "The file is visible but cannot be opened ",
+          "How to recover corrupted files ",
+          "The repair file is corrupted and cannot be opened. ",
+          "How to get rid of corrupted files ",
+          "How to repair The file is corrupted and cannot be opened. " ,
+          "The file is visible but cannot be opened."  ,
+          "I can view the file, but I can't open it. "  ,
+          "How to repair The file is corrupted and  cannot be opened."
+        ],
+        "responses":[
+          "Perform a check disk on the hard drive. Running this tool scans the hard drive and attempts to recover bad sectors." ,
+          "Use the CHKDSK command. This is the command version of the tool we looked at above." ,
+          "Use the SFC /scannow command. This command aims to find and repair corrupt Windows system files." ,
+          "Change the file format. Use a free file converter app, or open the file with any application that automatically converts from other file formats." ,
+          "Use file repair software. If you're desperate to fix the file and recover your information, try a file repair utility. "
+        ]
+      },
+      {
+        "tag":"background processes",
+        "patterns":[
+          "Can I get rich background process that you do not need?",
+          "This will prevent too many unwanted processes from running in the background.",
+          "What is the best way to get rid of a swarm of unwanted background processes?",
+          "How can I get rid of a lot of background processes that I don't need?",
+          "What can I do to reduce the number of Windows 10 processes?",
+          "How do I stop a series of unnecessary processes running in the background?",
+          "How can I stop a slew of unneeded processes from running in the background?",
+          "How  to reduce the number of processes running in Windows 10?",
+          "How do I reduce the number of processes running in Windows 10?",
+          "What can I do with Windows 10 to limit the number of running processes?",
+          "How do you handle a slew of unrelated tasks?",
+          "How can I get rid of a plethora of background processes that aren't needed?",
+          "How to deal with a rich background process",
+          "How to Stop so many unnecessary process from running in background",
+          "How do I leave a series of unwanted background processes?",
+          "What's the best way to get rid of a swarm of unneeded background processes?",
+          "How do you handle some background tasks?",
+          "How to fix too many background processes",
+          "How can I prevent unwanted processes from running in the background?",
+          "How do you deal with a slew of background tasks?",
+          "How do I get rid of a slew of unnecessary background processes?",
+          "How to deal with a plethora of background processes",
+          "How do you deal with many background tasks?",
+          "What can I do to reduce the number of processes running in Windows 10?",
+          "What can I do in Windows 10 to limit the number of processes running?",
+          "What can you do with Windows 10 to limit the number of running processes?",
+          "How can I process an increase in adjacent tasks?",
+          "How to deal with rich background processes"
+        ],
+        "responses":[
+          "Reduce Background Processes Using Task Manager" ,
+          "Strip Down Windows 10 Startup Processes ",
+          "Disable Third-Party Software Services from Windows Startup" ,
+          "Free up Resources Windows 10 through System Configuration" ,
+          "Enable Battery saver on your device which prevents unnecessary app from starting up automatically." 
+        ]
+      },
+      {
+        "tag":"none",
+        "patterns":[
+          "I want to eat a pizza",
+          "can you hit me",
+          "",
+          "ok man",
+          "zxvccnmbcx",
+          "asdfghjkl",
+          "qwertyuiop"
+        ],
+        "responses":["Please rephrase"]
+      }
+    ]
+  }
